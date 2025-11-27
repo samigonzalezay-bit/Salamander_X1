@@ -9,31 +9,43 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Barra de navegación -->
+
+  <!-- NAVBAR SOLO CON LOGO SALAMANDER -->
   <header class="navbar">
-  <div class="nav-left">
-    <img src="img/logo.png" class="nav-logo" alt="Logo Salamander X1">
-    <span class="nav-brand">SALAMANDER X1</span>
-  </div>
+    <div class="nav-left">
+      <img src="img/logo.png" class="nav-logo" alt="Logo Salamander X1">
+      <div class="nav-title">
+        <span class="nav-brand">SALAMANDER X1</span>
+        <span class="nav-subbrand">CanSat de monitoreo meteorológico</span>
+      </div>
+    </div>
 
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#resumen">Resumen</a>
-    <a href="#justificacion">Justificación</a>
-    <a href="#valor">Propuesta de valor</a>
-    <a href="#diseno">Diseño técnico</a>
-    <a href="#programacion">Programación</a>
-    <a href="#estacion">Estación terrestre</a>
-    <a href="#resultados">Resultados</a>
-    <a href="#impacto">Impacto</a>
-    <a href="#conclusiones">Conclusiones</a>
-    <a href="#referencias">Referencias</a>
-  </nav>
-</header>
+    <nav>
+      <a href="#inicio" class="nav-link">Inicio</a>
+      <a href="#resumen" class="nav-link">Resumen</a>
+      <a href="#justificacion" class="nav-link">Justificación</a>
+      <a href="#valor" class="nav-link">Propuesta de valor</a>
+      <a href="#diseno" class="nav-link">Diseño técnico</a>
+      <a href="#programacion" class="nav-link">Programación</a>
+      <a href="#estacion" class="nav-link">Estación terrestre</a>
+      <a href="#resultados" class="nav-link">Resultados</a>
+      <a href="#impacto" class="nav-link">Impacto</a>
+      <a href="#conclusiones" class="nav-link">Conclusiones</a>
+      <a href="#referencias" class="nav-link">Referencias</a>
+    </nav>
+  </header>
 
-  <!-- Sección hero / portada -->
+  <!-- FRANJA INSTITUCIONAL -->
+  <section class="brand-strip">
+    <img src="img/logotecnm.png" alt="Logo TecNM" class="brand-logo brand-logo-left">
+    <img src="img/logotectepic.png" alt="Logo Tec Tepic" class="brand-logo brand-logo-right">
+  </section>
+
+  <!-- HERO / PORTADA -->
   <section id="inicio" class="hero">
+    <!-- TEXTO A LA IZQUIERDA -->
     <div class="hero-content">
       <h1>Salamander X1</h1>
       <p class="hero-subtitle">CanSat para monitoreo meteorológico y alerta temprana local</p>
@@ -48,9 +60,13 @@
       </div>
       <a href="#resumen" class="btn-primary">Ver memoria técnica</a>
     </div>
+
+    <!-- GIF GRANDE A LA DERECHA -->
     <div class="hero-image">
-      <img src="img/prototipo.jpg" alt="Prototipo Salamander X1" />
-      <span class="hero-caption">Prototipo físico del CanSat Salamander X1</span>
+      <div class="hero-image-frame">
+        <img src="img/GIF_ENSAMBLE.gif" alt="Animación de ensamblaje Salamander X1">
+      </div>
+      <span class="hero-caption">Ensamble del CanSat Salamander X1</span>
     </div>
   </section>
 
@@ -60,27 +76,10 @@
       <h2>Resumen ejecutivo</h2>
       <span class="section-label">01</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        El objetivo de nuestro proyecto es desarrollar un CanSat para recolectar datos meteorológicos mediante comunicación y análisis
-        de trayectorias, a fin de generar información que apoye la alerta temprana local sobre el estado climatológico. El sistema
-        realiza muestreos continuos, proporcionando datos para la toma de decisiones en situaciones de lluvias intensas, sequías y
-        variaciones en la calidad del aire.
-      </p>
-      <p>
-        Permitirá generar perfiles atmosféricos en zonas rurales, reducir la incertidumbre en la información disponible y detectar
-        condiciones que anticipen incendios, fortaleciendo la respuesta ante fenómenos climáticos y mejorando planes de mitigación.
-      </p>
-      <p>
-        Al lanzar el CanSat en distintas zonas y momentos del día se identifican dónde y cuándo se presentan con mayor frecuencia
-        condiciones propicias para la lluvia, como alta humedad relativa o descensos de presión. Esta información es valiosa para
-        protección civil y agricultura, pues permite a productores conocer mejor los patrones locales de precipitación.
-      </p>
-      <p>
-        Con ello, los agricultores pueden estimar condiciones para cultivos, planificar siembras, proteger cosechas y aprovechar
-        recursos eficientemente. El impacto del proyecto también radica en su valor educativo y científico, al servir como plataforma
-        de aprendizaje en áreas como electrónica, programación y ciencias ambientales, además de aportar datos sobre clima y calidad
-        del aire en Tepic.
+        El Salamander X1 es un proyecto de CanSat diseñado para recolectar datos meteorológicos locales mediante sensores de alta precisión y comunicación LoRa. Mide variables como temperatura, humedad, presión, calidad del aire y movimiento, además de contar con GPS para registrar su posición durante el vuelo. Realiza muestreos continuos en ascensos y descensos para generar perfiles atmosféricos útiles en la detección temprana de riesgos ambientales, como tormentas, vientos fuertes o condiciones propensas a incendios. Su arquitectura modular facilita el mantenimiento y la integración de sensores. La información obtenida apoya decisiones en agricultura, protección civil y monitoreo ambiental, además de contribuir a modelos de predicción climática más precisos. El proyecto también impulsa la educación y la investigación al promover el uso de tecnologías modernas para resolver problemas del entorno.
       </p>
     </div>
   </section>
@@ -91,32 +90,11 @@
       <h2>Justificación e impacto</h2>
       <span class="section-label">02</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        El desarrollo de este CanSat tiene relevancia para la investigación científica y la generación de información local sobre
-        fenómenos meteorológicos en Tepic, Nayarit. El dispositivo permite recolectar datos sobre variables atmosféricas como
-        temperatura, presión, humedad, calidad del aire y patrones de precipitación, contribuyendo a reducir la incertidumbre en la
-        información climática disponible.
-      </p>
-      <p>
-        Esta información puede ser utilizada para identificar zonas y momentos con condiciones propicias para lluvias intensas, lo que
-        resulta valioso para la toma de decisiones en Protección Civil, estudios ambientales y aplicaciones en agricultura.
-      </p>
-      <p>
-        Tepic se caracteriza por una temporada de lluvia opresiva y nublada y una temporada seca parcialmente nublada y calurosa
-        durante todo el año. La temperatura varía generalmente entre 8 °C y 31 °C, y rara vez baja de 4 °C o supera 33 °C. Sin
-        embargo, al registrarse temperaturas de hasta 33 °C en periodos en los que se esperarían valores más bajos, las plagas
-        aceleran su ciclo biológico, lo que provoca una mayor reproducción y un riesgo adicional para la producción agrícola.
-      </p>
-      <p>
-        Estas condiciones climáticas hacen que el monitoreo local sea especialmente importante, ya que permite generar datos precisos
-        para planificar recursos, proteger cultivos y estimar condiciones favorables para la producción agrícola.
-      </p>
-      <p>
-        El proyecto impacta en múltiples áreas: monitoreo ambiental, comunicación de información meteorológica, agricultura y análisis
-        de datos aplicados a STEM. Además, contribuye al avance de la investigación aplicada en tecnología espacial y picosatélites,
-        demostrando cómo proyectos locales pueden producir información valiosa para comprender fenómenos climáticos específicos y
-        fortalecer la capacidad de respuesta ante condiciones adversas.
+    El desarrollo del CanSat es relevante para Tepic, Nayarit, debido a sus condiciones climáticas variables y la falta de mediciones locales precisas. El Salamander X1 ofrece datos atmosféricos en tiempo real que ayudan a identificar patrones relacionados con lluvias intensas, cambios bruscos de presión, contaminación o sequedad que pueda causar incendios. Las fuertes precipitaciones de la temporada de lluvias y el calor seco de la temporada seca hacen necesario un sistema portátil y autónomo que proporcione información específica por zona. Los datos generados facilitan la toma de decisiones en agricultura, protección civil y monitoreo ambiental, además de apoyar a instituciones, autoridades y comunidades que dependen del clima para sus actividades.
+     
       </p>
     </div>
   </section>
@@ -127,118 +105,62 @@
       <h2>Propuesta de valor</h2>
       <span class="section-label">03</span>
     </div>
-    <div class="card two-columns">
+
+    <div class="card reveal">
       <div>
         <p>
-          El CanSat desarrollado destaca por su diseño compacto y funcional, pensado para integrar todos sus sistemas de forma
-          ordenada y eficiente. En su interior, la estructura se organiza mediante tres columnas dispuestas en forma de triángulo, cada
-          una equipada con orificios M2 que permiten fijar los sensores y mantener la estabilidad durante el vuelo.
+El CanSat presenta un diseño compacto y organizado mediante tres columnas triangulares con orificios M2 para fijar sensores y garantizar estabilidad. Una PCB integra la ESP32-C3 Super Mini y la memoria SD, otra concentra los sensores y una tercera aloja el módulo LoRa, logrando un montaje ordenado y fácil de mantener. El sistema transmite en tiempo real variables como temperatura, presión, humedad, calidad del aire, altitud y movimiento. Sus principales ventajas son la generación de datos precisos para decisiones ambientales, agrícolas y de prevención de riesgos, así como la capacidad de detectar patrones climáticos que no registran las estaciones convencionales. Además, su diseño modular y escalable permite reemplazar sensores, añadir nuevos módulos y adaptarlo a diversos fines educativos o de investigación.        
+        
+        
+       
         </p>
-        <p>
-          Una de las placas alberga la ESP32-C3 Super Mini junto con el lector de memoria SD, mientras que otra PCB concentra los
-          módulos de sensores para facilitar su conexión y mantenimiento. La pared restante se reserva exclusivamente para el módulo
-          LoRa, lo que permite un montaje más limpio, una mejor gestión del cableado y ajustes posteriores sin complicaciones.
-        </p>
-        <p>
-          El sistema de transmisión utiliza módulos LoRa que envían datos en tiempo real a la estación terrestre, permitiendo al
-          usuario monitorar variables como temperatura, presión, humedad relativa y calidad del aire mientras el CanSat está en
-          operación. Un respaldo local de almacenamiento asegura la recuperación de datos en caso de pérdida de señal, aumentando la
-          confiabilidad del sistema.
-        </p>
-      </div>
-      <div>
-        <p>
-          Entre los beneficios principales destacan la capacidad de generar información útil para estudios ambientales y aplicaciones
-          agrícolas, apoyando la planificación de recursos y la toma de decisiones ante lluvias intensas. Además, el CanSat impulsa la
-          innovación tecnológica y el aprendizaje aplicado en áreas STEM, mostrando cómo los picosatélites pueden responder a
-          necesidades locales.
-        </p>
-        <p>
-          En cuanto a escalabilidad, el diseño permite reemplazar sensores por chips de silicio propios, reduciendo espacio y peso para
-          integrar más instrumentos. Esto abre la posibilidad de medir con mayor detalle el caudal de lluvias en distintas zonas y
-          compartir los datos en plataformas de visualización como Grafana, permitiendo análisis históricos y en tiempo real, así como
-          ampliar las aplicaciones del CanSat a otros estudios ambientales y educativos.
-        </p>
-      </div>
     </div>
   </section>
 
-  <!-- DISEÑO TÉCNICO -->
+  <!-- DISEÑO TÉCNICO DEL PROTOTIPO -->
   <section id="diseno" class="section section-alt">
     <div class="section-header">
       <h2>Diseño técnico del prototipo</h2>
       <span class="section-label">04</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        El prototipo está fabricado en PETG y se compone de tres piezas principales: una base que sostiene las PCBs con los sensores,
-        un módulo intermedio que integra el compartimento para el paracaídas y una pieza superior que funciona como tapa. En el
-        interior, la estructura incorpora tres columnas distribuidas en forma triangular, cada una con orificios M2 e insertos
-        metálicos, lo que permite montar de manera segura los distintos componentes.
+      
+El prototipo está construido en PETG y formado por tres piezas principales: una base para las PCBs, un módulo intermedio que contiene el paracaídas y una tapa superior que sella el sistema y aloja el servomotor encargado de liberarlo. Su estructura interna consiste en tres columnas triangulares con insertos metálicos M2 que fijan los componentes. La carcasa incluye un patrón tipo panal para mejorar la ventilación y obtener mediciones más precisas.
+
+El dispositivo mide 66 mm de diámetro externo, 58.9 mm internos y 115 mm de altura; las columnas internas tienen 60 mm y el compartimento del paracaídas 42 mm de ancho. Entre los componentes integrados se encuentran el MPU6050, BME680, GPS ATGM336H, ESP32-C3 Super Mini, servomotor SG90, tarjeta SD y una PCB de expansión, alimentados por una batería Li-ion 18650. La estructura está optimizada para reducir peso, vibraciones y mejorar la estabilidad, con insertos de latón que aseguran un ensamble resistente.      
+      
+      
       </p>
-      <p>
-        La carcasa cuenta con una estructura en forma de panal que facilita la entrada de aire, optimizando la captura de datos.
-        Asimismo, la tapa superior posee un espacio diseñado para la instalación de un servomotor.
-      </p>
-      <p>
-        En cuanto a sus dimensiones, la estructura interna presenta un diámetro de 58.9 mm, mientras que, al cerrarse, alcanza 66 mm.
-        La altura total es de 115 mm y las columnas internas miden 60 mm. Además, se incluyen bases específicas: una de 42 mm para el
-        módulo del paracaídas, cada cara del triángulo tiene un ancho de 42 mm, espacio exacto para las PCBs.
-      </p>
-      <p>
-        El prototipo integra los siguientes componentes electrónicos: MPU-6050, lector SD, BME680, módulo GPS ATGM336H, ESP32-C3 Super
-        Mini, servomotor SG90 y tarjeta de expansión. Asimismo, se añadieron insertos de latón diseñados para coincidir con tornillos
-        M2, lo que facilita un ensamble más seguro y resistente.
-      </p>
-      <p>
-        Se empleó una batería Li-ion 18650 de 3.7 V y 3000 mAh, utilizando la ESP32-C3 Super Mini para la distribución y regulación de
-        la energía suministrada a los distintos componentes.
-      </p>
+
+      <!-- FOTO DEL PROTOTIPO EN DISEÑO TÉCNICO -->
+      <div class="prototipo-image">
+        <img src="img/prototipo.jpg" alt="Prototipo físico del CanSat Salamander X1">
+      </div>
+
     </div>
   </section>
-
-  <!-- PROGRAMACIÓN Y LÓGICA -->
+  <!-- PROGRAMACIÓN Y LÓGICA DEL SISTEMA -->
   <section id="programacion" class="section">
     <div class="section-header">
       <h2>Programación y lógica del sistema</h2>
       <span class="section-label">05</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        El sistema inicializa los componentes conectados al microcontrolador. El módulo LoRa se comunica por UART utilizando el pin 10
-        como transmisión (TX) y el pin 3 como recepción (RX). El GPS, también a través de UART, emplea el pin 20 como recepción (RX) y
-        el pin 21 como transmisión (TX).
-      </p>
-      <p>
-        Los dispositivos que trabajan mediante comunicación I2C, como la brújula, el sensor barométrico BMP280 y el
-        acelerómetro-giroscopio MPU6050, están conectados en los pines 8 (SDA) y 9 (SCL). Además, el sensor de gases BME680 se
-        encuentra vinculado al pin analógico A0 para la lectura de valores. La tarjeta SD utiliza el pin 7 como línea de selección de
-        chip (CS) en la interfaz SPI. Finalmente, el servomotor encargado de representar el mecanismo de despliegue del paracaídas
-        está conectado al pin 2.
-      </p>
-      <p>
-        El algoritmo de lectura de sensores se ejecuta de forma cíclica dentro del bucle principal. En cada iteración, se recopilan los
-        datos emitidos por el GPS, el rumbo calculado por la brújula, los valores de gas medidos, así como la temperatura, presión y
-        altitud barométrica entregados por los sensores. Del MPU6050 se obtienen los vectores de aceleración en los tres ejes. La
-        primera vez que se mide la altitud, el sistema la guarda como valor de referencia o "altura base", con el fin de compararla en
-        lecturas posteriores.
-      </p>
-      <p>
-        En cuanto al algoritmo de transmisión de datos, se genera un dato tipo string que concatena todos los datos recopilados por los
-        sensores, guardándolos en una línea. De manera posterior, se envía un mensaje mediante el puerto serial hacia el módulo LoRa
-        para su transmisión por radiofrecuencia. Paralelamente, se imprime en el monitor serial y se almacena en un archivo dentro de
-        la tarjeta SD, asegurando así tanto el respaldo local como la disponibilidad remota de la información.
-      </p>
-      <p>
-        El algoritmo de despliegue del paracaídas se basa en la comparación entre la altitud actual y la altura base previamente
-        registrada. Si ambos valores coinciden, el sistema interpreta que ha alcanzado la condición para la activación y ordena al
-        servomotor moverse hasta los 90 grados, lo que representa la apertura del paracaídas. En caso contrario, el servo se mantiene
-        en su posición inicial de 0 grados, indicando que el dispositivo sigue en estado de espera.
-      </p>
-      <p>
-        En lo referente al control de energía y almacenamiento, el programa optimiza el uso del microcontrolador al realizar lecturas
-        periódicas cada 500 milisegundos, evitando sobrecargas innecesarias. El almacenamiento en la tarjeta SD se maneja mediante
-        escritura secuencial en un archivo de texto, lo que permite conservar un registro de cada sesión de vuelo.
+      
+
+El sistema inicia configurando todos los sensores del CanSat (MPU6050, BME680, QMC5883L y GPS). Después de comprobar que el GPS tiene señal, el programa entra en un ciclo continuo donde mide temperatura, humedad, presión, calidad del aire, aceleración, giro, orientación y altitud.
+Estos datos se filtran para eliminar ruido y luego se forman paquetes que se envían por LoRa hacia la estación terrestre con un formato que permite validar si llegaron completos.
+
+Además, el CanSat incluye un sistema automático para desplegar el paracaídas: cuando el sensor barométrico detecta que el dispositivo está descendiendo y ha bajado de una altitud mínima, el servomotor libera el paracaídas.
+
+Finalmente, toda la información transmitida también se guarda en una tarjeta SD, organizada por fecha y hora, para analizar después el ascenso y descenso del vuelo.
+      
+      
+     
       </p>
     </div>
   </section>
@@ -249,171 +171,131 @@
       <h2>Estación terrestre</h2>
       <span class="section-label">06</span>
     </div>
-    <div class="card two-columns">
+
+    <div class="card  reveal two-columns">
       <div>
         <p>
-          La GUI del CanSat fue desarrollada en Python e incluye un código que permite recibir datos a través del puerto serial del
-          receptor LoRa. El diseño utiliza un fondo azul oscuro que facilita la visualización de la información y los gráficos. La
-          ventana principal está dividida en tres secciones: en el lado izquierdo se encuentran el radar de supervisión y la brújula,
-          mientras que en el lado derecho se muestra la telemetría, una animación del descenso y un mini mapa. En la última columna se
-          muestran los datos recopilados por los sensores y los controles del sistema.
-        </p>
-        <p>
-          El panel de telemetría presenta en tiempo real datos numéricos que abarcan latitud, longitud, rumbo, temperatura, presión,
-          altura y calidad del aire. Este último parámetro cuenta con un ancho fijo para garantizar una lectura clara. Entre los datos,
-          se muestra la brújula, representada con un círculo y la rosa de los vientos. Una línea con flecha indica el rumbo actual del
-          CanSat.
-        </p>
-        <p>
-          La interfaz permite alternar entre datos simulados para pruebas y datos reales recibidos por el puerto serie, actualizándose
-          automáticamente cada segundo. También integra la interpretación de la calidad del aire mediante la lectura del sensor BME
-          680.
+        La estación terrestre está hecha en Python con PyQt5 y muestra en tiempo real los datos enviados por el CanSat. Lee información por un puerto serial conectado al módulo LoRa, valida los paquetes recibidos y descarta los que estén incompletos o corruptos.
+La interfaz permite ver temperatura, humedad, presión, calidad del aire, altitud, aceleración, giro y orientación, además de incluir gráficas, indicadores y un panel de depuración.
+
+También permite usar datos simulados para pruebas, iniciar o pausar la recepción, guardar los datos en archivos CSV y reiniciar las gráficas, facilitando su análisis posterior.
         </p>
       </div>
-      <div class="image-column">
-        <img src="img/gui_estacion.jpg" alt="GUI estación terrestre Salamander X1" />
-        <span class="image-caption">Interfaz gráfica de la estación terrestre</span>
-      </div>
-    </div>
+
+     <div class="image-column">
+    <img src="img/gui_estacion.jpg" alt="GUI estación terrestre Salamander X1" />
+    <br>
+    <p class="image-caption">Interfaz gráfica de la estación terrestre</p>
+</div>
+
   </section>
 
-  <!-- RESULTADOS -->
+  <!-- RESULTADOS DE PRUEBAS -->
   <section id="resultados" class="section">
     <div class="section-header">
       <h2>Resultados experimentales y pruebas</h2>
       <span class="section-label">07</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        El sistema fue lanzado desde una altura aproximada de 7 m, manteniendo estabilidad en la transmisión y recepción de datos
-        durante todo el descenso. El paracaídas se desplegó correctamente, lo que permitió una caída estable y un tiempo promedio de
-        descenso de 2 segundos. Gracias al módulo GPS, la recuperación del prototipo se realizó sin dificultades.
-      </p>
-      <p>
-        Durante las pruebas iniciales, los sensores registraron una temperatura de 29.55 °C, una presión de 910.6 hPa y una calidad del
-        aire clasificada como regular. La orientación fue representada gráficamente a partir de los datos enviados por el MPU6050,
-        mostrando variaciones en tiempo real conforme al movimiento del dispositivo.
-      </p>
-      <p>
-        La frecuencia de adquisición fue de 1 segundo por captura, con actualización en la GUI cada 2 segundos, lo que permitió
-        visualizar de manera continua los parámetros medidos. En los ensayos posteriores, los datos presentaron leves variaciones,
-        consistentes con las condiciones ambientales en el momento de cada lanzamiento.
-      </p>
-      <p>
-        Las gráficas generadas a partir de la información recolectada mostraron tendencias estables en las mediciones de temperatura,
-        presión y altitud, confirmando la confiabilidad del sistema. Asimismo, la comparación entre diferentes pruebas indicó que los
-        resultados son reproducibles y se ajustan al comportamiento esperado.
-      </p>
-      <p>
-        Toda la información obtenida fue almacenada en la memoria SD para su posterior análisis. En conjunto, las pruebas confirmaron
-        el correcto funcionamiento de los sensores, la estabilidad del sistema durante la caída y la efectividad de la comunicación de
-        datos hacia la GUI.
+       Se realizaron pruebas lanzando el CanSat desde 7 metros, comprobando que el LoRa, los sensores y la tarjeta SD funcionaran correctamente sin perder datos. El BME680 registró valores estables de temperatura, humedad, presión y calidad del aire, con una frecuencia de 1 lectura por segundo.
+
+Las gráficas mostraron lecturas coherentes y sin ruido, y se verificó que los datos transmitidos coincidían exactamente con los almacenados en la SD. El GPS también respondió bien, logrando obtener señal y entregar coordenadas precisas para validar la ubicación del CanSat durante las pruebas.
       </p>
     </div>
   </section>
 
-  <!-- ANÁLISIS + IMPACTO EDUCATIVO Y SOCIAL -->
+  <!-- ANÁLISIS CRÍTICO E IMPACTO -->
   <section id="impacto" class="section section-alt">
     <div class="section-header">
       <h2>Análisis crítico, impacto educativo y social</h2>
       <span class="section-label">08</span>
     </div>
-    <div class="card">
-      <h3>Análisis crítico</h3>
-      <p>
-        Una de las ventajas del proyecto es la estructura hecha con PETG, un material que ofrece la resistencia suficiente para soportar
-        las fuerzas del descenso. Además, combina ligereza y durabilidad, lo que ayuda a mantener el sistema seguro durante su
-        funcionamiento.
-      </p>
-      <p>
-        En cuanto a las limitaciones, el uso de Ripstop como material para el paracaídas presentó inconvenientes, ya que su grosor
-        dificultaba un doblado eficiente. Esto obligó inicialmente a emplear un paracaídas de 25 cm de diámetro, medida poco adecuada
-        para garantizar un descenso controlado. Posteriormente se optó por un modelo más ligero de poliéster impermeable, lo que
-        permitió utilizar el diámetro ideal de 28 cm, alcanzando un mejor desempeño.
-      </p>
-      <p>
-        También existen restricciones de peso y espacio, pues la inclusión de varios sensores reduce el margen para integrar más
-        componentes o mejorar la distribución interna. El consumo de corriente se vuelve crítico, ya que más sensores requieren una
-        batería de mayor capacidad, lo que incrementa el peso. Como recomendación, se plantea considerar un sistema de transmisión más
-        compacto. El módulo LoRa empleado cumple su función, pero su tamaño representa un inconveniente.
-      </p>
 
-      <h3>Impacto educativo y social</h3>
+    <div class="card reveal">
+      <h3>Análisis crítico</h3>
+
       <p>
-        El diseño del prototipo es fácilmente replicable gracias a la reducida cantidad de piezas que lo conforman, lo cual permite la
-        construcción de nuevos dispositivos a partir de la estructura impresa en 3D. Esta base posibilita la integración de diferentes
-        componentes que se ajusten a los orificios diseñados, otorgando flexibilidad para incorporar elementos con distintas funciones
-        según el contexto.
-      </p>
-      <p>
-        La distribución planteada integra los elementos esenciales del sistema, ya que la tarjeta de desarrollo empleada es de carácter
-        comercial, los sensores son de fácil acceso mediante una búsqueda en internet y la carcasa presenta un costo reducido. Además,
-        el funcionamiento del prototipo puede comprenderse con facilidad debido a la familiaridad de los componentes utilizados.
-      </p>
-      <p>
-        En el ámbito educativo, el prototipo fomenta el aprendizaje práctico al involucrar al equipo en procesos de diseño,
-        programación y ensamblaje, lo que fortalece competencias como el pensamiento crítico, la resolución de problemas y el trabajo
-        en conjunto.
+        El análisis muestra que el prototipo tiene ventajas como su carcasa de PETG resistente y diseñada con orificios que mejoran la precisión de los sensores. No obstante, el paracaídas de Ripstop tuvo problemas de despliegue por arrugarse, lo que indica que el sistema de liberación necesita optimizarse. También se destaca que integrar tantos sensores en un espacio reducido es un reto técnico importante por el acomodo de cables, batería y servomotor.
+
+En cuanto al impacto educativo, el proyecto permite aprender electrónica, comunicaciones, diseño CAD, programación y análisis de datos, además de que su diseño modular facilita repararlo y reutilizarlo. Socialmente, el CanSat puede apoyar el monitoreo ambiental, ayudar a comunidades agrícolas o zonas vulnerables y servir como base para modelos de predicción y alertas tempranas, gracias a sus sensores y comunicación LoRa de largo alcance.
       </p>
     </div>
   </section>
-
   <!-- CONCLUSIONES -->
   <section id="conclusiones" class="section">
     <div class="section-header">
       <h2>Conclusiones</h2>
       <span class="section-label">09</span>
     </div>
-    <div class="card">
+
+    <div class="card reveal">
       <p>
-        Cada parte del CanSat cumple una función específica que no debe interferir con el correcto desempeño de los demás componentes;
-        por ello, una distribución adecuada de responsabilidades garantiza que la arquitectura del sistema opere de forma integrada y
-        eficiente.
-      </p>
-      <p>
-        Los elementos que conforman el CanSat nos permitieron comprender el manejo de diversos sensores y la implementación de un
-        módulo GPS. Asimismo, se adquirió experiencia en la distribución de voltajes dentro de un circuito complejo, en la generación
-        de una línea de almacenamiento para guardar la información recolectada en la tarjeta SD y en el establecimiento de
-        comunicación mediante radiofrecuencia.
-      </p>
-      <p>
-        El diseño del CanSat permite reemplazar sensores por chips de silicio propios, reduciendo espacio y peso para integrar más
-        instrumentos y medir con mayor detalle el caudal de lluvias en distintas zonas. Los datos podrían compartirse en plataformas de
-        visualización como Grafana, permitiendo análisis históricos y en tiempo real, y ampliando las aplicaciones del CanSat a otros
-        estudios ambientales y educativos.
-      </p>
-      <p>
-        Además, esta información puede servir como apoyo para el desarrollo de algoritmos y bases de datos en el estado de Nayarit,
-        contribuyendo a la predicción de condiciones para la detección temprana de incendios.
+        Cada sensor del CanSat cumple una función clave: el acelerómetro y giroscopio miden movimiento y orientación, el sensor ambiental obtiene temperatura, humedad, presión y calidad del aire, y el GPS determina la ubicación. Su integración en una estructura compacta permitió analizar cómo se relacionan las variables ambientales, demostrando que el prototipo es útil para estudios climáticos a pequeña escala.
+
+El diseño modular facilita reemplazar sensores o agregar nuevos, permitiendo mejoras futuras como GPS más rápidos, barómetros más precisos o sensores de partículas. Los datos obtenidos sirven como base para sistemas de alerta, modelos predictivos y aplicaciones en protección civil, agricultura y monitoreo ambiental.
       </p>
     </div>
   </section>
 
-  <!-- REFERENCIAS (resumen) -->
+  <!-- REFERENCIAS -->
   <section id="referencias" class="section section-alt">
     <div class="section-header">
       <h2>Referencias bibliográficas</h2>
       <span class="section-label">10</span>
     </div>
+
     <div class="card references">
       <ul>
-        <li>UNAM PEU. Descripción de proyectos CanSat educativos.</li>
-        <li>Adafruit. Documentación de sensores BMP280 y MPU6050.</li>
-        <li>Mikalhart. Librería TinyGPSPlus para manejo de datos NMEA.</li>
-        <li>QST Corporation. Sensor magnético de 3 ejes para brújula digital.</li>
-        <li>Gobierno de México. Condiciones climatológicas y desarrollo de plagas.</li>
-        <li>AG Electrónica. Módulo adaptador de memoria micro SD.</li>
-        <li>Roa et al. Análisis dinámico estructural de satélites educativos CanSat.</li>
-        <li>Gómez, Y. R. Optimización de redes de monitoreo climático local.</li>
+        <li>UNAM Programa Espacial Universitario. Documentación y proyectos educativos CanSat.</li>
+        <li>Adafruit Industries. Datasheet y guía de uso del sensor BME680.</li>
+        <li>InvenSense. Especificaciones técnicas del acelerómetro y giroscopio MPU6050.</li>
+        <li>QST Corporation. Manual técnico del sensor QMC5883L.</li>
+        <li>Microchip Technology. Documentación de comunicación LoRa y aplicaciones IoT.</li>
+        <li>Python Software Foundation. Documentación oficial de PyQt5.</li>
+        <li>INEGI. Información climatológica oficial para Tepic, Nayarit.</li>
+        <li>World Meteorological Organization (WMO). Manual de mediciones atmosféricas.</li>
       </ul>
     </div>
   </section>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- FOOTER -->
   <footer class="footer">
     <p>Salamander X1 · CanSat de monitoreo meteorológico</p>
-    <p>Sube, explora, inspira</p>
+    <p>TecNM · Instituto Tecnológico de Tepic</p>
   </footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="scroll-top" id="scrollTopBtn">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  window.addEventListener("scroll", () => {
+    for (let r of reveals) {
+      const top = r.getBoundingClientRect().top;
+      if (top < window.innerHeight - 60) {
+        r.classList.add("active");
+      }
+    }
+  });
+</script>
 
 </body>
 </html>
