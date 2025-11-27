@@ -443,11 +443,12 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .brand-strip {
+.brand-strip {
     flex-direction: column;
-    gap: 0.5rem;
+    justify-content: space-between;
     align-items: center;
-    padding: 0.6rem 1.4rem;          /* franja de logos más compacta */
+    gap: 1rem;
+        /* franja de logos más compacta */
   }
 }
 
@@ -469,5 +470,6 @@ body {
     font-size: 2.2rem;
   }
 }
+
 
 
