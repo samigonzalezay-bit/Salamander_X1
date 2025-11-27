@@ -444,11 +444,11 @@ body {
   }
 
 .brand-strip {
-    flex-direction: column;
+  display:flex;
+    flex-direction: row !important;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-        /* franja de logos más compacta */
   }
 }
 
@@ -470,6 +470,7 @@ body {
     font-size: 2.2rem;
   }
 }
+
 
 
 
